@@ -1,30 +1,21 @@
-![Austral Ingenieria](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQooGo7vQn4t9-6Bt46qZF-UY4_QFpYOeh7kVWzwpr_lbLr5wka)
 
-#   Project 04-hcsr
+#   Project SemaforoInteligente
 
-##  Measure distance with Ultrasonic Sensor HC-SR04
-
-    Electronica Digital - Austral - 2023 - EAM
-    Uses ESP32 microcontroller
+##  Descripcion
+    El proyecto tiene como objetivo el control eficiente de los semáforos en una ruta principal que cruza con una calle intermedia, asegurando un flujo de tráfico fluido y seguro. Utilizaremos una placa ESP32 y sensores HC-SR04 para detectar la presencia de vehículos en la calle intermedia y ajustar automáticamente el funcionamiento de los semáforos.
 
 ###  Hardware
 
-    1 Ultrasonic Sensor HC-SR04
+    2 Ultrasonic Sensor HC-SR04
     Jumper wires
+    9 leds
+    9 resistencias
 
-###  Connections
-
-    Connect VCC  in HC-SR04 to VIN (+5V) in ESP32
-    Connect Trig in HC-SR04 to GPIO "TRIG_PIN"
-    Connect Echo in HC-SR04 to GPIO "Echo_PIN"
-    Connect GND  in HC-SR04 to GND in ESP32
 
 ###  Verification
 
-    Set an obstacle in front of sensor and verify distance as read in serial monitor
+    El semaforo 1 estara siempre en verde hasta que alguno de los sensores detecten una distancia menor a la minima establecida. En este momento se pondra el semaforo 1 en rojo y se activara la secuencia del semaforo correspondiente al sensor que se activo
 
-###  Links
 
-[RandomNerd Tutorials - ESP32 with HC-SR04 Ultrasonic Sensor](https://randomnerdtutorials.com/esp32-hc-sr04-ultrasonic-arduino/)
 
 
